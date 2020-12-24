@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.port || 8000;
+const port = process.env.PORT || 8000;
 const path = require('path');
 const hbs = require('hbs');
 
@@ -40,6 +40,6 @@ app.get("*",(req,res) => {
 });
 
 
-app.listen(8000,(err) => {
+app.listen(port,(err) => {
     console.log(`Listening to Port ${port}`);
 });
