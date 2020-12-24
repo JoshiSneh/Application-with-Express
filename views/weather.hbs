@@ -51,6 +51,23 @@
     </footer>
      
      <script src="js/main.js"> </script>
+     <script>
+         const day = document.getElementById("day");
+         const date = document.getElementById("date");
+        
+        const d = new Date();
+        const arr = new Array();
+        arr[0] = "Sunday";
+        arr[1] = "Monday";
+        arr[2] = "Tuesday";
+        arr[3] = "Wednesday";
+        arr[4] = "Thursday";
+        arr[5] = "Friday";
+        arr[6] = "Saturday";
+        day.innerText = arr[d.getDay()];
+        date.innerText = d.getDate();
+
+     </script>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
